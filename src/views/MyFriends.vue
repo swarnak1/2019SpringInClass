@@ -13,6 +13,9 @@
 <script>
 import { Globals } from "@/models/api";
 import { GetFriends } from "@/models/users.js";
+
+
+
 export default {
     data(){
         return {
@@ -27,4 +30,5 @@ export default {
 </script>
 
 <style>
+
 </style>

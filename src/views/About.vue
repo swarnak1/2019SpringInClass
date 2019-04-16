@@ -13,11 +13,13 @@
 <script>
 export default {
     data: ()=> ({
-      name: "Teja",
-      age: 21
+      name: "Moshe",
+      age: 42
     })
 }
 </script>
 
 <style type="scss">
+
 </style>
+
