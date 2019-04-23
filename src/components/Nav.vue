@@ -25,14 +25,16 @@
                 <router-link to="/Login" class="nav-link">Login</router-link>
                 <router-link to="/Register" class="nav-link">Sign Up</router-link>
             </form>
-            <span class="navbar-text" v-if="Globals.user">Welcome {{Globals.user.FirstName}} {{Globals.user.LastName}}</span>
+            <span class="navbar-text" v-if="Globals.user">
+                <img width="30" :src="`https://graph.facebook.com/${Globals.oAuthUser.id}/picture`" />
+                Welcome {{Globals.user.FirstName}} {{Globals.user.LastName}}
+            </span>
         </div>
     </nav>
 </template>
 
 <script>
 import { Globals } from "@/models/api";
-
 export default {
     data: ()=>({
         Globals: Globals
@@ -44,5 +46,4 @@ export default {
 </script>
 
 <style>
-
 </style>
