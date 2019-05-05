@@ -18,6 +18,12 @@
                     <router-link class="nav-link" to="/MyFriends">My Friends</router-link>
                 </li>
                 <li class="nav-item">
+                    <router-link class="nav-link" to="/Cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Cart
+                    </router-link>
+                </li>
+                <li class="nav-item">
                     <router-link class="nav-link disabled" to="#"  active-class="active">Disabled</router-link>
                 </li>
             </ul>
@@ -35,6 +41,7 @@
 
 <script>
 import { Globals } from "@/models/api";
+
 export default {
     data: ()=>({
         Globals: Globals
@@ -46,4 +53,5 @@ export default {
 </script>
 
 <style>
+
 </style>
